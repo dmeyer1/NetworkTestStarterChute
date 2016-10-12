@@ -11,6 +11,8 @@ while true; do
     #
     # NOT IMPLEMENTED
     #
+    ping -c 5 wisc.edu >> /usr/share/nginx/html/results.txt
+    iperf -c iperf.wiscnet.net -i2 >> /usr/share/nginx/html/results.txt
 
     sleep 60
 done
