@@ -9,7 +9,10 @@ FROM paradrop/workshop
 RUN apt-get update && apt-get install -y \
 #   <package> \
     nginx \
+    dmidecode \
+    pciutils \
     iperf
+
 
 # Install files required by the chute.
 #
