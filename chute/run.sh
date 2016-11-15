@@ -7,7 +7,9 @@
 # You can implement logic here to do periodic network tests and save the
 # results.  You can do that directly from this bash script or call another
 # program that you write (e.g. in Python).
-
+echo "Bios date:  " > /usr/share/nginx/html/results.txt
+/bin/cat /sys/class/dmi/id/bios_date >> /usr/share/nginx/html/results.txt
+/usr/bin/lspci >> /usr/share/nginx/html/results.txt
 while true; do
     #
     # NOT IMPLEMENTED
